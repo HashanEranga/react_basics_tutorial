@@ -77,18 +77,33 @@ import ReactDom from 'react-dom'
 // }
 
 // article section alternative method
-function Greetings() {
+// function Greetings() {
+//   return (
+//     <section>
+//       <article>
+//         <h1>heading 1 aritcle</h1>
+//       </article>
+//       <article>
+//         <h1>heading 1 article another article</h1>
+//       </article>
+//     </section>
+//   )
+// }
+
+// components and tools
+function Greetings () {
   return (
-    <section>
-      <article>
-        <h1>heading 1 aritcle</h1>
-      </article>
-      <article>
-        <h1>heading 1 article another article</h1>
-      </article>
-    </section>
+    <div>
+      {/* <h1>John Doe</h1>
+      <p>This is my message</p> */}
+      <Person/>
+      <Message/>
+    </div>
   )
 }
+// creting the component person and 
+const Person = () => <h4>John Doe</h4>
+const Message = () => <p>This is my message</p>
 
 // Render the component 
 // In this case the first attribute defines the component and second one shows where to render
