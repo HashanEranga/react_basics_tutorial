@@ -58,16 +58,30 @@ import ReactDom from 'react-dom'
 // }
 
 // another alteration for the react fragments 
+// function Greetings() {
+//   return (
+//     <>
+//       <div>
+//         <h1>Div 1 alternative implementattion</h1>
+//       </div>
+//       <div>
+//         <h1>Div 2 alternative implementation</h1>
+//       </div>
+//     </>
+//   )
+// }
+
+// article section alternative method
 function Greetings() {
   return (
-    <>
-      <div>
-        <h1>Div 1 alternative implementattion</h1>
-      </div>
-      <div>
-        <h1>Div 2 alternative implementation</h1>
-      </div>
-    </>
+    <section>
+      <article>
+        <h1>heading 1 aritcle</h1>
+      </article>
+      <article>
+        <h1>heading 1 article another article</h1>
+      </article>
+    </section>
   )
 }
 
