@@ -113,19 +113,21 @@ import './index.css';
 function BookList() {
   return (
     <section className='booklist'>
-      <Book/>
+      <Book />
+      <Book />
     </section>
   )
 }
 
 const author = 'Peter Catapano and Simon Critchley';
+const title = 'Modern Ethics in 77 ARGUMENTS';
+
 const Book = () => {
-  const title = 'Modern Ethics in 77 ARGUMENTS';
   return (
     <article className='book'>
       <img src="https://shopbigbadwolfbooks.com/pub/media/catalog/product/cache/51cdeea3aed414b99f3cd5b119aa40cd/9/7/9781631492983_1.jpg" alt=""/>
       <h1>{title}</h1>
-      <h2 style={{color:'#617d98', fontSize:'0.75rem', marginTop:'0.25rem'}}>{author}</h2>
+      <h2 style={{color:'#617d98', fontSize:'0.75rem', marginTop:'0.25rem'}}>{author.toUpperCase()}</h2>
     </article>
   )
 }
