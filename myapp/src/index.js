@@ -91,20 +91,57 @@ import ReactDom from 'react-dom'
 // }
 
 // components and tools
-function Greetings () {
+// function Greetings () {
+//   return (
+//     <div>
+//       {/* <h1>John Doe</h1>
+//       <p>This is my message</p> */}
+//       <Person/>
+//       <Message/>
+//     </div>
+//   )
+// }
+
+// creting the component person and 
+// const Person = () => <h4>John Doe</h4>
+// const Message = () => <p>This is my message</p>
+
+// booklet
+function BookList() {
   return (
-    <div>
-      {/* <h1>John Doe</h1>
-      <p>This is my message</p> */}
-      <Person/>
-      <Message/>
-    </div>
+    <section>
+      <Book/>
+      <Book/>
+    </section>
   )
 }
-// creting the component person and 
-const Person = () => <h4>John Doe</h4>
-const Message = () => <p>This is my message</p>
+
+const Book = () => {
+  return (
+    <article>
+      <Image/>
+      <Title/>
+      <Author/>
+    </article>
+  )
+}
+
+const Image = () => {
+  return <img src="https://shopbigbadwolfbooks.com/pub/media/catalog/product/cache/51cdeea3aed414b99f3cd5b119aa40cd/9/7/9781631492983_1.jpg" alt=""/>
+}
+
+const Title = () => {
+  return (
+    <h1>Modern Ethics in 77 ARGUMENTS</h1>
+  )
+}
+
+const Author = () => {
+  return (
+    <p>Peter Catapano and Simon Critchley</p>
+  )
+}
 
 // Render the component 
 // In this case the first attribute defines the component and second one shows where to render
-ReactDom.render(<Greetings/>, document.getElementById('root'));
+ReactDom.render(<BookList/>, document.getElementById('root'));
