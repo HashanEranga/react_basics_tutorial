@@ -118,29 +118,15 @@ function BookList() {
   )
 }
 
+const author = 'Peter Catapano and Simon Critchley';
 const Book = () => {
+  const title = 'Modern Ethics in 77 ARGUMENTS';
   return (
     <article className='book'>
-      <Image/>
-      <Title/>
-      <Author/>
+      <img src="https://shopbigbadwolfbooks.com/pub/media/catalog/product/cache/51cdeea3aed414b99f3cd5b119aa40cd/9/7/9781631492983_1.jpg" alt=""/>
+      <h1>{title}</h1>
+      <h2 style={{color:'#617d98', fontSize:'0.75rem', marginTop:'0.25rem'}}>{author}</h2>
     </article>
-  )
-}
-
-const Image = () => {
-  return <img src="https://shopbigbadwolfbooks.com/pub/media/catalog/product/cache/51cdeea3aed414b99f3cd5b119aa40cd/9/7/9781631492983_1.jpg" alt=""/>
-}
-
-const Title = () => {
-  return (
-    <h1>Modern Ethics in 77 ARGUMENTS</h1>
-  )
-}
-
-const Author = () => {
-  return (
-    <h2 style={{color:'#617d98', fontSize:'0.75rem', marginTop:'0.25rem'}}>Peter Catapano and Simon Critchley</h2>
   )
 }
 
