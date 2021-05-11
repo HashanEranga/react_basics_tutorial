@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
+// importing css file index.css
+import './index.css';
+
 // functional Component 
 // function Greetings(){
 //   return <h4>First Component Creation updates</h4>;
@@ -109,7 +112,12 @@ import ReactDom from 'react-dom'
 // booklet
 function BookList() {
   return (
-    <section>
+    <section className='booklist'>
+      <Book/>
+      <Book/>
+      <Book/>
+      <Book/>
+      <Book/>
       <Book/>
       <Book/>
     </section>
@@ -118,7 +126,7 @@ function BookList() {
 
 const Book = () => {
   return (
-    <article>
+    <article className='book'>
       <Image/>
       <Title/>
       <Author/>
