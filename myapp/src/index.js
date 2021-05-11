@@ -6,6 +6,11 @@ import ReactDom from 'react-dom'
 //   return <h4>First Component Creation updates</h4>;
 // }
 
+// function Greetings(){
+//   return <h4>
+//     First Component Creation updates</h4>;
+// }
+
 // another way of creating the Greetings() function
 // const Greetings = () => {
 //   return React.createElement('h1', {}, 'Hello World');
