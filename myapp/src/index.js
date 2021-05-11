@@ -114,12 +114,6 @@ function BookList() {
   return (
     <section className='booklist'>
       <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
-      <Book/>
     </section>
   )
 }
@@ -146,7 +140,7 @@ const Title = () => {
 
 const Author = () => {
   return (
-    <p>Peter Catapano and Simon Critchley</p>
+    <h2 style={{color:'#617d98', fontSize:'0.75rem', marginTop:'0.25rem'}}>Peter Catapano and Simon Critchley</h2>
   )
 }
 
