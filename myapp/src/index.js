@@ -119,10 +119,11 @@ function BookList() {
   )
 }
 
+//setup vars
 const author = 'Peter Catapano and Simon Critchley';
 const title = 'Modern Ethics in 77 ARGUMENTS';
 
-const Book = () => {
+const Book = (props) => {
   return (
     <article className='book'>
       <img src="https://shopbigbadwolfbooks.com/pub/media/catalog/product/cache/51cdeea3aed414b99f3cd5b119aa40cd/9/7/9781631492983_1.jpg" alt=""/>
