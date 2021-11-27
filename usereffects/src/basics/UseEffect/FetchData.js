@@ -1,6 +1,6 @@
 import React , {useState, useEffect} from 'react'
 
-const url = 'https://api.github.com/users'
+const url = 'https://api.github.com/users/QuincyLarson'
 
 function FetchData() {
     const [users, setUsers] = useState([])
