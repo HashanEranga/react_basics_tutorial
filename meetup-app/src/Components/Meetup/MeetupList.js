@@ -1,10 +1,10 @@
 import React from "react";
 import MeetupItem from "./MeetupItem";
+import classes from './MeetupList.module.css'
 
 function MeetupList(props) {
   return (
-    <div>
-      <ul>
+      <ul className={classes.list}>
         {props.meetups.map((meetup) => {
           return (
             <MeetupItem
@@ -18,7 +18,6 @@ function MeetupList(props) {
           );
         })}
       </ul>
-    </div>
   );
 }
 
