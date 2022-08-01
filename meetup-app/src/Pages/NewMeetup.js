@@ -1,8 +1,9 @@
 import React from 'react'
+import NewMeetupForm from '../Components/Meetup/NewMeetupForm'
 
 function NewMeetup() {
   return (
-    <div>NewMeetup</div>
+    <NewMeetupForm/>
   )
 }
 
